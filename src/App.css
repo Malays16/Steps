@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+body {
+  background-color: #fff;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  align-items: flex-end;
+}
+
+label {
+  color: #333;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  position: relative;
+}
+input {
+  width: 200px;
+  height: 50px;
+  padding: 0 10px;
+  font-size: 18px;
+  border: 2px solid #333;
+  color: #333;
+  background-color: #fff;
+  margin-right: 20px;
+  border-radius: 8px;
+  margin-top: 8px;
+}
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type='number'],
+input[type='number']:hover,
+input[type='number']:focus {
+  appearance: none;
+  -moz-appearance: textfield;
+}
+input:disabled {
+  background-color: #eee;
+  color: #999;
+  cursor: not-allowed;
+}
+
+#add {
+  width: 100px;
+  height: 50px;
+  font-size: 18px;
+  text-transform: uppercase;
+  border: 2px solid #333;
+  color: #333;
+  background-color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+#add:disabled {
+  background-color: #eee;
+  color: #999;
+  cursor: not-allowed;
+}
+
+.error {
+  position: absolute;
+  bottom: -25px;
+  color: red;
+  font-size: 14px;
+  text-align: left;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+}
+th,
+td {
+  padding: 10px 5px;
+  text-align: center;
+  color: #333;
+  font-size: 18px;
+  font-weight: 500;
+}
+tbody {
+  box-shadow: 0 0 2px #000;
+  border-radius: 8px;
+}
+th {
+  background-color: #fff;
+  color: #333;
+}
+#edit,
+#delete {
+  font-size: 24px;
+  color: #333;
+  background-color: transparent;
+  cursor: pointer;
+  margin-left: 10px;
+}
+#delete {
+  color: red;
+}
